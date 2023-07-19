@@ -1,0 +1,134 @@
+/* Tab bar styles */
+.tab-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f8f9fa;
+    height: 50px;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .tab {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #343a40;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .tab:hover {
+    color: #007bff;
+  }
+  
+  .tab.active {
+    color: #007bff;
+    border-bottom: 3px solid #007bff;
+  }
+  
+  /* Tab content styles */
+  .tab-content {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Graphic styles */
+  .tab-bar {
+    position: relative;
+    perspective: 1000px;
+  }
+  
+  .tab {
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .tab:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #007bff;
+    transform-origin: bottom;
+    transform: rotateX(90deg);
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+  }
+  
+  .tab:hover:before,
+  .tab.active:before {
+    transform: rotateX(0deg);
+  }
+  
+  .tab:before {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .tab:hover:before {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Motion styles */
+  .tab {
+    transform: translateX(0);
+  }
+  
+  .tab:hover:not(.active) {
+    transform: translateX(10px);
+  }
+  
+  /* 3D styles */
+  .tab {
+    transform-style: preserve-3d;
+  }
+  
+  .tab:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #007bff;
+    transform-origin: center;
+    transform: rotateX(-90deg) translateZ(-25px);
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+  }
+  
+  .tab.active:before {
+    transform: rotateX(0deg) translateZ(-25px);
+  }
+  
+  /* Animation styles */
+  @keyframes tabSlide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .tab-bar {
+    animation: tabSlide 1s forwards;
+    opacity: 0;
+  }
+  
+  .tab-bar.show {
+    opacity: 1;
+  }
+  
+  .tab-content {
+    animation: tabSlide 1s forwards;
+    opacity: 0;
+  }
+  
+  .tab-content.show {
+    opacity: 1;
+  }

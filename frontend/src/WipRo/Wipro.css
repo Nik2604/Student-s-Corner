@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body
+  {
+    /* background-image: url(Wipro.jpeg); */
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  
+  .Wipro {
+    min-height: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0rem 3rem ;
+  }
+  
+  .card {
+    background: transparent;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    backdrop-filter: blur(15px);
+  }
+  
+  .card h2
+  {
+      color:#fff;
+  }
+  
+  
+  .card p{
+    padding-top: 1rem;
+    line-height: 150%;
+    color: white;
+  }
+  
+  .expand {
+    width: 57rem;
+  }

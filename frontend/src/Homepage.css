@@ -1,0 +1,53 @@
+/* Homepage.css */
+
+.App {
+    text-align: center;
+  }
+  
+  .Vignan-heading {
+    color: #00BFFF;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px rgba(0, 191, 255, 0.8);
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0px 0px 10px rgba(0, 191, 255, 0.8);
+    }
+    to {
+      text-shadow: 0px 0px 20px rgba(0, 191, 255, 0.8);
+    }
+  }
+  
+  .card {
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .card-button {
+    margin-top: 16px;
+    background-color: #00BFFF;
+    color: #fff;
+  }
+  
+  .card-button:hover {
+    background-color: #0077B6;
+  }
+  

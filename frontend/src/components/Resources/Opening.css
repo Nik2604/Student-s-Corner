@@ -1,0 +1,80 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+  color: #333;
+  margin: 0;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  background-color: #00BFFF;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+  animation: shine 2s ease-in-out infinite;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes shine {
+  0% {
+    background-color: #1E90FF;
+  }
+  50% {
+    background-color: #00BFFF;
+  }
+  100% {
+    background-color: #00BFFF;
+  }
+}
+
+.text {
+  font-size: 20px;
+}
+
+.moreText {
+  display: none;
+}
+
+.text.show-more .moreText {
+  display: inline;
+}
+
+.read-more-btn {
+  padding: 10px 20px;
+  background-color: #F5DEB3;
+  color: #333;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.button1 {
+  background-color: #F5DEB3;
+  border: none;
+  border-radius: 30px;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.button1:last-child {
+  margin-right: 0;
+}
+
+
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}

@@ -1,0 +1,46 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body
+  {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: lightpink;
+  } */
+  
+  .ResumeTips {
+    min-height: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:  ;
+    /* background-color:black; */
+  }
+  
+  .card {
+    background: transparent;
+    padding: 0.4rem 1.5rem;
+    cursor: pointer;
+    backdrop-filter: blur(25px);
+  }
+  
+  .card h2
+  {
+      color: solid black;
+  }
+  
+  
+  .card p{
+    padding-top: 1rem;
+    line-height: 250%;
+    color: white;
+  }
+  
+  .expand {
+    width: 57rem;
+  }
+
